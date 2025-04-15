@@ -6,6 +6,8 @@ discount_per = input("Enter the discount percentage: ")
 
 discount_price_calculate = DiscountPriceCalculator(price, discount_per)
 
-discount = discount_price_calculate.calculate_discount(price,discount_per)
+discount = discount_price_calculate.calculate_discount()
 
-discounted_price = discount_price_calculate.calculate_discounted_price(price)
+discounted_price = discount_price_calculate.calculate_discounted_price()
+
+print(f"The price after {discount} Euros discount is: {discounted_price} Euros")
